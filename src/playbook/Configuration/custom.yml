@@ -2,9 +2,9 @@
 title: Root Playbook File
 description: Runs all of the Playbook files
 actions:
-    # Check various conditions to see if the user should run Atlas or not
+    # Warn user if their Windows install is old
   - !powerShell:
-    command: '.\UPGRADECHECK.ps1'
+    command: '.\INSTALLCHECK.ps1'
     exeDir: true
     wait: true
 
