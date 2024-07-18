@@ -62,4 +62,7 @@ Although the GUI is not open source for AME Wizard, AME Wizard's entire backend 
 As Atlas doesn't redistribute a modified Windows ISO, it complies with [Windows's Usage Terms](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm). In addition, Atlas does not alter activation in Windows.
 
 ## 🎨 Brand kit
-Want to create your own Atlas wallpaper with some original creative designs? Download our brand kit [here](https://github.com/Atlas-OS/branding/archive/refs/heads/main.zip) and share your creations on our [forum](https://forum.atlasos.net/t/art-showcase).
+Want to create your own Atlas wallpaper with some original creative designs? Visit our [Branding Kit on Docs](https://docs.atlasos.net/branding/) and share your creations on our [forum](https://forum.atlasos.net/t/art-showcase)!
+
+## 💙 Contributors
+<a href="https://github.com/Atlas-OS/Atlas/graphs/contributors" target="_blank"><img src="https://contrib.rocks/image?repo=Atlas-OS/Atlas&columns=18" alt="Avatars of all contributors"></a>

@@ -27,6 +27,18 @@ actions:
     exeDir: true
     wait: true
 
+  - !writeStatus: {status: 'Disabling Location'}
+  - !cmd:
+    command: '"AtlasDesktop\3. General Configuration\Location\Disable Location (default).cmd" /silent'
+    exeDir: true
+    wait: true
+
+  - !writeStatus: {status: 'Configuring Indexing'}
+  - !cmd:
+    command: '"AtlasDesktop\3. General Configuration\Search Indexing\Minimal Search Indexing (default).cmd" /silent'
+    exeDir: true
+    wait: true
+
   ##############################################################################################
   ## SERVICES                                                                                 ##
   ##############################################################################################
@@ -34,13 +46,10 @@ actions:
   - !writeStatus: {status: 'Configuring services'}
 
     # ------ Microsoft recommendation - 'OK to disable' ------
-  - !service: {name: 'lfsvc', operation: change, startup: 4}
-  - !service: {name: 'MapsBroker', operation: change, startup: 4}
   - !service: {name: 'OneSyncSvc', operation: change, startup: 4}
   - !service: {name: 'TrkWks', operation: change, startup: 4}
   - !service: {name: 'PcaSvc', operation: change, startup: 4}
   - !service: {name: 'DiagTrack', operation: change, startup: 4}
-  - !service: {name: 'WSearch', operation: change, startup: 4}
 
     # ------ Microsoft recommendation - 'Do not disable' -----
   - !service: {name: 'diagnosticshub.standardcollector.service', operation: change, startup: 4}

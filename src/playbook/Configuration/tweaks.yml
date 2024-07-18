@@ -52,6 +52,7 @@ actions:
   - !task: {path: 'tweaks\performance\disable-background-apps.yml'}
   - !task: {path: 'tweaks\performance\disable-fth.yml'}
   - !task: {path: 'tweaks\performance\disable-sleep-study.yml'}
+  - !task: {path: 'tweaks\performance\respect-power-modes-search.yml'}
 
 
   # -------------------------------------------------------------------------- #
@@ -83,12 +84,12 @@ actions:
   - !task: {path: 'tweaks\privacy\disable-activity-feed.yml'}
   - !task: {path: 'tweaks\privacy\disable-app-launch-tracking.yml'}
   - !task: {path: 'tweaks\privacy\disable-experimentation.yml'}
-  - !task: {path: 'tweaks\privacy\disable-location-tracking.yml'}
   - !task: {path: 'tweaks\privacy\disable-lockscreen-camera.yml'}
   - !task: {path: 'tweaks\privacy\disable-online-speech-recognition.yml'}
   - !task: {path: 'tweaks\privacy\disable-pca.yml'}
   - !task: {path: 'tweaks\privacy\disable-perf-track.yml'}
   - !task: {path: 'tweaks\privacy\disable-privacy-experience.yml'}
+  - !task: {path: 'tweaks\privacy\disable-recall-snap.yml'}
   - !task: {path: 'tweaks\privacy\disable-device-monitoring.yml'}
   - !task: {path: 'tweaks\privacy\disable-rsop-logging.yml'}
   - !task: {path: 'tweaks\privacy\disable-speech-auto-updates.yml'}
@@ -99,6 +100,12 @@ actions:
   - !task: {path: 'tweaks\privacy\disallow-ms-accounts.yml'}
   - !task: {path: 'tweaks\privacy\disallow-user-activity-upload.yml'}
   - !task: {path: 'tweaks\privacy\search-settings.yml'}
+
+  # -------------------------------------------------------------------------- #
+  #  privacy\apps                                                              #
+  # -------------------------------------------------------------------------- #
+  - !task: {path: 'tweaks\privacy\apps\disable-nvidia-telemetry.yml'}
+  - !task: {path: 'tweaks\privacy\apps\disable-office-telemetry.yml'}
 
   # -------------------------------------------------------------------------- #
   #  privacy\advertising                                                       #
@@ -142,7 +149,6 @@ actions:
   - !task: {path: 'tweaks\qol\best-wallpaper-quality.yml'}
   - !task: {path: 'tweaks\qol\config-start-menu.yml'}
   - !task: {path: 'tweaks\qol\config-windows-ink-workspace.yml'}
-  - !task: {path: 'tweaks\qol\disable-background-auto-login.yml'}
   - !task: {path: 'tweaks\qol\disable-mouse-accel.yml'}
   - !task: {path: 'tweaks\qol\disable-settings-tips.yml'}
   - !task: {path: 'tweaks\qol\disable-spell-checking.yml'}
@@ -158,6 +164,9 @@ actions:
   - !task: {path: 'tweaks\qol\visual-effects.yml'}
   - !task: {path: 'tweaks\qol\disable-tips.yml'}
   - !task: {path: 'tweaks\qol\disable-win11-settings-banner.yml'}
+  - !task: {path: 'tweaks\qol\disable-screen-capture-hotkey.yml', option: 'remove-snipping-tool'}
+  - !task: {path: 'tweaks\qol\disable-dynamic-lighting.yml'}
+  - !task: {path: 'tweaks\qol\disable-auto-app-archival.yml'}
 
   # -------------------------------------------------------------------------- #
   #  qol\appearance                                                            #
@@ -224,7 +233,6 @@ actions:
   # -------------------------------------------------------------------------- #
   - !task: {path: 'tweaks\qol\explorer\remove-context-menus\cast-to-device.yml'}
   - !task: {path: 'tweaks\qol\explorer\remove-context-menus\extract-all.yml'}
-  - !task: {path: 'tweaks\qol\explorer\remove-context-menus\give-access-to.yml'}
   - !task: {path: 'tweaks\qol\explorer\remove-context-menus\include-in-library.yml'}
   - !task: {path: 'tweaks\qol\explorer\remove-context-menus\new-bitmap.yml'}
   - !task: {path: 'tweaks\qol\explorer\remove-context-menus\new-rtf.yml'}
