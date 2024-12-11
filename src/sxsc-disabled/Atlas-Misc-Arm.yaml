@@ -13,4 +13,3 @@ updates:
       - file: 'SettingsExtensions.json' # Remove advertisements from 'Accounts' page in Settings
         destination: '$(runtime.windows)\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\Public\wsxpacks\Account\'
         operation: replace
-        text: '{}'
